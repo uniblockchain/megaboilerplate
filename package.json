@@ -5,10 +5,10 @@
   "scripts": {
     "build": "webpack --display-error-details",
     "postinstall": "npm run build",
-    "start": "node server.js",
+    "start": "node src/server.js",
     "test": "npm run test:client && npm run test:server",
-    "test:client": "mocha test/client --recursive --compilers js:babel-register",
-    "test:server": "mocha test/server --recursive --compilers js:babel-register"
+    "test:client": "mocha src/test/client --recursive --compilers js:babel-register",
+    "test:server": "mocha src/test/server --recursive --compilers js:babel-register"
   },
   "dependencies": {
     "async": "^1.5.2",
@@ -64,8 +64,5 @@
     "sinon": "^1.17.3",
     "sinon-chai": "^2.8.0",
     "supertest": "^1.2.0"
-  },
-  "engines": {
-    "node": "6.1.0"
   }
 }

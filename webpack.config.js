@@ -5,10 +5,10 @@ var config = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './app/main'
+    './src/app/main'
   ],
   output: {
-    path: path.join(__dirname, 'public', 'js'),
+    path: path.join(__dirname, 'src', 'public', 'js'),
     filename: 'bundle.js',
     publicPath: '/js'
   },
