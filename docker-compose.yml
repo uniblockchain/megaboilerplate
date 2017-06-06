@@ -19,9 +19,9 @@ services:
     links:
       - postgres:postgres
     volumes:
-      - ./webpack.config.js:/app/webpack.config.js
       - ./src:/app/src
     environment:
+      - MANUALRUN
       - NODE_ENV=development
       - MAILGUN_USERNAME
       - MAILGUN_PASSWORD
